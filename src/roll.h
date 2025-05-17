@@ -1,4 +1,7 @@
+#pragma once
 #include "die.h"
+
+class TestRoll;
 
 class Roll {
 public:
@@ -9,5 +12,7 @@ public:
 private:
     Die& die1;
     Die& die2;
-    int rolled_value{0};
+    int rolled_value {0};
+
+    friend class TestRoll;
 };
